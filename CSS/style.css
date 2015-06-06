@@ -71,7 +71,7 @@ header {
     background-size: cover;
 }
 
-.nav-bar {   
+.nav {   
     background-color: #8e44ad;
 }
 
@@ -120,6 +120,49 @@ header {
     color: #ededed;
     border-bottom: 3px solid;   
 }
+
+
+/* Sticky Nav Code */
+.sticky {
+    position: fixed;    
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.sticky .icon-logo {
+    color: #8e44ad;
+    display: inline-block;    
+    margin: 0;
+    padding: 0;
+    font-size: 180%;
+    padding-left: 20px;
+}
+
+.sticky .main-nav {    
+    font-size: 70%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 0px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {    
+    color: #8e44ad;    
+    text-decoration: none;
+    text-transform: uppercase;   
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;    
+}
+
+.sticky .main-nav li a:active,
+.sticky .main-nav li a:hover {
+    color: #8e44ad;
+    border-bottom: 3px solid;   
+}
+
+/* End Sticky Nav */
+
 
 .header-text {    
     position: absolute;
@@ -185,8 +228,7 @@ header {
     padding-top: 1%;
     padding-bottom: 1%;
     border-radius: 50%;
-    visibility: hidden;
-    
+    visibility: hidden;    
 }
 
 /* ----------------------------------------------- */
@@ -198,23 +240,9 @@ header {
     background-attachment: fixed;
     background-position: center;
     padding-top: 0px;  
-    margin-top: 30px;
+    margin-top: 50px;
     background-color: #fff;
-    /*height: 100vh;*/
-}
-
-.rounded-box {
-    background-color: #8e44ad;
-    color: #fff;
-    float: left;
-    border: 2px solid #transparent;
-    border-radius: 8px;
-    font-size: 70%;
-    margin-left: 45%;
-    margin-right: 45%;
-    margin-top: -14px;
-    text-transform: uppercase;
-    padding: 5px;
+    height: 100vh;
 }
 
 .what-we-do-desc {
