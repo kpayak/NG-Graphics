@@ -1,3 +1,5 @@
+var map;
+
 $(document).ready (
     function() {    
     
@@ -12,5 +14,15 @@ $(document).ready (
     }, {
       offset: '100px;'
     });
+        
+    /* MAPS */
+    map = new GMaps({
+      div: '.map',
+      lat: 22.7281031,
+      lng:75.8532572        
+        
+    });
     
     });
+
+
