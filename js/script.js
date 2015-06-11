@@ -18,10 +18,20 @@ $(document).ready (
     /* MAPS */
     map = new GMaps({
       div: '.map',
-      lat: 22.7281031,
-      lng:75.8532572        
-        
+        zoom: 13,
+      lat: 22.7263872,
+      lng:75.8638627          
     });
+        
+    /*map.addMarker({
+      lat: 22.7263872,
+      lng:75.8638627          
+      title: 'Lima',
+      click: function(e) {
+        alert('You clicked in this marker');
+      }
+    });*/
+
     
     });
 
