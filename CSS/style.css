@@ -359,27 +359,45 @@ header {
 /* HOW-WE-WORK SECTION */
 /* ----------------------------------------------- */
 .how-we-work {
-    background-color: #fff;
+    background-color: #ededed;
     color: #8e44ad;
+    padding-bottom: 5%;
 }
 
 .steps {
 }
 
 .step-number {
-    margin-left: 30%;
+    margin-left: 38%;
     text-align: center;
     vertical-align: middle;
     width: 100px;
     height: 100px;
-    border: 1px solid #8e44ad;
+    border: 1px solid #ededed;
     border-radius: 50%;
+    background-color: #8e44ad;
+    color: #fff;
 }
 
 .step-number p {
     font-size: 250%;
     font-weight: 200;    
     padding-top: 10%;
+}
+
+.steps-icon {    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 200%;    
+    color: #8e44ad;
+    font-weight: 100;
+}
+
+.steps-text {
+    font-size: 90%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 
@@ -392,6 +410,7 @@ header {
     margin-top: 0;
     height: 500px;
     width: 100%;
+    margin-bottom: 5%;
 }
 
 .map {    
