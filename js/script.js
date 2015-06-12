@@ -18,19 +18,19 @@ $(document).ready (
     /* MAPS */
     map = new GMaps({
       div: '.map',
-        zoom: 13,
+        zoom: 15,
       lat: 22.7263872,
       lng:75.8638627          
     });
         
-    /*map.addMarker({
-      lat: 22.7263872,
-      lng:75.8638627          
-      title: 'Lima',
-      click: function(e) {
-        alert('You clicked in this marker');
-      }
-    });*/
+    map.addMarker({
+        lat: 22.7263872,
+        lng:75.8638627,          
+        title: 'NG Graphics',
+        infoWindow: {
+            content: '<p>NG Graphics<br>11/2 Snehlataganj, Indore<br>Madhya Pradesh, 452010<br>Ph:98260-32486<\p>'
+        }
+    });
 
     
     });

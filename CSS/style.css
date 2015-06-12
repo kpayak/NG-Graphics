@@ -97,7 +97,7 @@ header {
     float: right;
     list-style: none;
     padding-top: 30px;      
-    font-size: 60%;
+    font-size: 70%;
     margin-right: 0%;
 }
 
@@ -173,7 +173,7 @@ header {
 .header-text {    
     position: absolute;
     padding-left: 5%;
-    width: 1140px;
+    width: 90%;
     top: 40%;    
     left: 5%;    
     right: 5%;    
@@ -355,7 +355,38 @@ header {
     padding: 0;  
 }
 
+/* ----------------------------------------------- */
+/* HOW-WE-WORK SECTION */
+/* ----------------------------------------------- */
+.how-we-work {
+    background-color: #fff;
+    color: #8e44ad;
+}
+
+.steps {
+}
+
+.step-number {
+    margin-left: 30%;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #8e44ad;
+    border-radius: 50%;
+}
+
+.step-number p {
+    font-size: 250%;
+    font-weight: 200;    
+    padding-top: 10%;
+}
+
+
+/* ----------------------------------------------- */
 /* CONTACT-US SECTION */
+/* ----------------------------------------------- */
+
 
 .contact-us {    
     margin-top: 0;
@@ -417,13 +448,13 @@ textarea {
     color: #fff;  
     border-radius: 5px;
     border: 0px solid #fff;
+    transition: background-color 0.1s;
 }
 
 #send-btn:hover {
     background-color: #f1c40f;
     color: #fff;
 }
-
 
 label { 
     float: left;
