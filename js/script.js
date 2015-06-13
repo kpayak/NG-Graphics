@@ -1,8 +1,9 @@
-var map;
+var map;  
 
 $(document).ready (
     function() {    
     
+        
     /* For the sticky navigation */
     $('.js--what-we-do').waypoint(function(direction)    
     {
