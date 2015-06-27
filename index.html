@@ -24,11 +24,11 @@
                         <!--<img src="logo/logo.png" alt="NG Graphics" class="logo">-->
                         <i class="ion-ios-flower icon-logo"></i>                        
                         <ul class="main-nav">
-                        <li><a href="#">WHAT WE DO</a></li>
-                        <li><a href="#">HOW WE WORK</a></li>
-                        <li><a href="#">PRICING</a></li>
-                        <li><a href="#">ACCOUNT</a></li>
-                        <li><a href="#">CONTACT</a></li>                        
+                        <li><a href="#section1" class="smoothScroll">WHAT WE DO</a></li>
+                        <li><a href="#section2" class="smoothScroll">HOW WE WORK</a></li>
+                        <li><a href="#section3" class="smoothScroll">PRICING</a></li>
+                        <li><a href="#section4" class="smoothScroll">ACCOUNT</a></li>
+                        <li><a href="#section5" class="smoothScroll">CONTACT</a></li>                        
                     </ul>
                     </div>                    
                 </nav>
@@ -37,15 +37,14 @@
             <div class="header-text">
                 <h1>NG Graphics.<br> MP's #1 Pre-Press House for CTP Solutions.</h1>
                 <div class="header-button">
-                    <a class="button" href="#">Learn More</a>
-                    <a class="button-white" href="#">Request Quote</a>
+                    <a class="smoothScroll button" href="#section1">Learn More</a>
+                    <a href="#section5" class="smoothScroll button-white" >Request Quote</a>
                 </div>                
             </div>       
-            
         </header>
         
         
-        <section class="what-we-do js--what-we-do">  
+        <section id="section1" class="what-we-do js--what-we-do">  
             <h2>What we do</h2>
             <div class="row what-we-do-desc">   
                 <div class="col span-1-of-4">                    
@@ -54,14 +53,12 @@
                             Our Experience
                         </div>
                     
-                        <div class='animatedParent' data-appear-top-offset='-350'>
-                        <div class="animated flipInX">                    
+                        
                         <div class="grey-box">                                                    
                             <p>We have over 25 years of experience in developing CTP (violet) plates, film processing and block making. Our pre-press house is known for quality, commitment & timely delivery.
                             </p>                    
                         </div> 
-                        </div>
-                        </div>
+                        
                 </div>        
                 
                 <div class="col span-1-of-4">                    
@@ -70,14 +67,12 @@
                         CTP
                     </div>
                     
-                    <div class='animatedParent' data-appear-top-offset='-350'>
-                    <div class="animated flipInX">                    
+                    
                     <div class="grey-box">                        
                         <p>Computer-to-plate (CTP) is an imaging technology used in modern printing processes. In this technology, an image created in a Desktop Publishing (DTP) application is output directly to a printing plate. 
                         </p>
                     </div>  
-                    </div>
-                    </div>
+                    
                 </div>             
                 
                 <div class="col span-1-of-4">
@@ -86,14 +81,12 @@
                         Our Customers
                     </div>
                     
-                    <div class='animatedParent' data-appear-top-offset='-350'>
-                    <div class="animated flipInX">                    
+                    
                     <div class="grey-box">                        
                         <p>Our customers range from offset printing houses to leading newspaper agencies across MP. We have a 5-star reputation within our customers. Feel free to contact us to get references.
                         </p>
                     </div> 
-                    </div>
-                    </div>
+                    
                 </div>             
                 
                 <div class="col span-1-of-4">
@@ -102,14 +95,12 @@
                         Pricing
                     </div>
                     
-                    <div class='animatedParent' data-appear-top-offset='-350'>
-                    <div class="animated flipInX">                    
+                    
                     <div class="grey-box">                        
                         <p>Our pricing is competitive, but we don't sacrifice quality. Please look at our pricing section or feel free to drop us an email. Don't forget to ask us for a quote.
                         </p>
                     </div>                    
-                    </div>
-                    </div>
+                    
                 </div> 
                 
                 
@@ -118,23 +109,24 @@
             </div>
         </section>
         
+        <section id="section2" class="how-we-work">
+            <h2>How We Work
+                <div class='animatedParent' data-appear-top-offset='-350'>
+                <div class="animated bounceInDown">                    
+                <div class="underline-box">
+                </div>
+                </div>
+                </div>            
+            </h2>
             
-            
-        <section class="how-we-work">
-            <h2>How We Work</h2>
                 <div class="row">
-                    <div class="col span-1-of-3">
-                        
-                        
-                        <div class='animatedParent' data-appear-top-offset='-350'>
-                        <div class="animated pulse">                    
+                    <div class="col span-1-of-3">            
                         <div class="row steps">
                             <div class="step-number">
                                 <p>1</p>                            
                             </div>                            
                         </div>
-                        </div>
-                        </div>
+                        
                         
                         <div class="row steps-icon">
                             <i class="ion-email"></i>
@@ -184,13 +176,11 @@
                 </div>
         </section>
  
-        <section class="pricing">
+        <section id="section3" class="pricing">
             <h2>Pricing</h2>
         </section>
         
-<!-------------------- ABOUT US SECTION---------------------->
-        
-        <section class="about-us"> 
+        <section id="section4" class="about-us"> 
             <h2> OUR TEAM </h2>
             <div class="row">                
                 <div class="col span-1-of-3">                                        
@@ -262,11 +252,9 @@
                     </div>                    
                 </div>                                
             </div>                      
-        </section>    
-        
-        <!-------------------- CONTACT US SECTION---------------------->
+        </section>          
 
-        <section class = "contact-us">     
+        <section id = "section5" class = "contact-us">     
             <h2>CONTACT-US</h2>
             <div class = "row">
                 <div class="map"></div>
@@ -338,9 +326,6 @@
             </div>
         </section>
 
-    
-                
-        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -351,6 +336,7 @@
     <!--<script src="http://maps.google.com/maps/api/js?sensor=true"></script>-->
     <script src="/js/script.js"></script>
     <script src="/js/css3-animate-it.js"></script>
+    <script src="/js/smoothscroll.js"></script>
 
     
     </body>
