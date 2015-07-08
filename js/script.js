@@ -1,7 +1,7 @@
 var map;  
 
 $(document).ready (
-    function() {    
+    function() {      
     
         
     /* For the sticky navigation */
