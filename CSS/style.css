@@ -23,6 +23,11 @@ body {
     visibility: hidden;
 }
 
+h1 {
+    font-weight: 300;
+    font-size: 150%;
+}
+
 h2 {
     font-size: 150%;
     color: #8e44ad;
@@ -31,7 +36,6 @@ h2 {
     text-align: center;    
     padding-top: 5%;
     padding-bottom: 3%;
-    
 }
 
 /*h2:after {
@@ -49,6 +53,12 @@ h3 {
     font-weight: 400;
 }
 
+h4 {
+    font-weight: 100;
+    font-size: 90%;
+    margin-top: -15px;
+}
+
 p {
     font-size: 80%;
     line-height: 150%;    
@@ -61,13 +71,13 @@ p {
 /* ----------------------------------------------- */
 
 header {
-    background-color: #8e44ad;
-    /*background-image: linear-gradient(rgba(142, 68, 173, 0.5), rgba(142, 68, 173, 1));*/
+    /*background-color: #8e44ad;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Images/indore1.jpg);
+    background-position: center;
     background-size: cover;    
     height: 95vh;
     color: #fff;    
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: fixed;    
 }
 
 .nav {   
@@ -171,28 +181,31 @@ header {
 
 /* End Sticky Nav */
 
-
 .header-text {    
-    padding-left: 0%;
-    margin-top: 10%;
-    margin-left: 15%;
+    margin-top: 15%;    
+    height: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     width: 80%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .header-button {
     margin-left: 45%;
-    margin-top: -1%;
-    font-weight: 400;
+    margin-top: 1%;
+    font-weight: 100;
 }
 
 .button:link,
 .button:visited {
+    font-size: 75%;
     float:left;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     text-decoration: none;
     color: #fff;
-    padding: 10px;
-    background-color: #8e44ad;
+    padding: 8px;
+    /*background-color: #8e44ad;*/
     margin-right: 10px;
     transition: background-color 0.2s color 0.2s border 0.2s;
 }
@@ -200,7 +213,7 @@ header {
 .button:hover,
 .button:active {    
     background-color: #fff;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     color: #8e44ad;        
 }
 
