@@ -86,7 +86,7 @@ p {
 
 header {
     /*background-color: #e67e22;*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/Images/indore_cartoon1.jpg);
+    background-image: linear-gradient(rgba(209, 45, 248, 0.65), rgba(214, 116, 54, 0.58)), url(/Images/indore1.jpg);
     background-position: center;
     background-size: cover;    
     height: 95vh;
@@ -204,6 +204,13 @@ header {
     width: 80%;
     text-align: center;
     text-transform: uppercase;
+}
+
+.rightCol {
+    float: right;
+    background-color: black;
+    height: 100%;
+    width: 30%;
 }
 
 .gradient-underline {
