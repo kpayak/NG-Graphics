@@ -66,6 +66,13 @@ h5 {
     margin-top: 10px;    
 }
 
+h6 {
+    margin-left: 20px;    
+    display: inline;
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
 p {
     font-size: 80%;
     line-height: 150%;    
@@ -79,7 +86,7 @@ p {
 
 header {
     /*background-color: #e67e22;*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.95)), url(/Images/indore3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/Images/indore_cartoon1.jpg);
     background-position: center;
     background-size: cover;    
     height: 95vh;
@@ -112,7 +119,8 @@ header {
 }
 
 .main-nav {
-    float: left;
+    float: right;
+    display: inline;
     list-style: none;
     padding-top: 20px;      
     font-size: 70%;
