@@ -1,423 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
     <head>
-        <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-        <link rel="stylesheet" type="text/css" href="CSS/grid.css">
-        <link rel = "stylesheet" type="text/css" href = "CSS/style.css">  
-        <link rel = "stylesheet" type="text/css" href = "CSS/animations.css">  
-        <link rel="stylesheet" type="text/css" href="/Icons/ionicons-2.0.1/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="/Icons/font-awesome-4.3.0/css/font-awesome.min.css">
-        
-        <!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>-->
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-        <!--<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>-->
-
         <title>NG Graphics</title>
+        <link rel="stylesheet" type="text/css" href="/Icons/ionicons-2.0.1/css/ionicons.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
-    
+
     <body>
-        <header>
-            
-            <div class="leftCol">
-                <i class="ion-ios-flower icon-logo"></i> 
-                <div class="logoText"><h1>NG Graphics</h1></div>
-            </div>
-            
-            <div class="rightCol">
-                <div class = "headerText">
-                    <h6>Pre-Press House, Block Making and CTP Solutions.</h6>                
-                </div>                
+        
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
                 
-                <div class="header-button">                        
-                    <a class="smoothScroll button" href="#section1">Learn More</a>                        
-                </div>                
-                
-            </div>
-            
-            <!--
-            <div class="row nav-bar">                
-                <nav>                        
-                    <div class="row">                        
+                <div class="navbar-header">                    
+                    <a class="navbar-brand" href="#">
                         <i class="ion-ios-flower icon-logo"></i> 
-                        <h6>NG Graphics</h6>
-                        <ul class="main-nav">
-                            <li><a href="#section1" class="smoothScroll">WHAT WE DO</a></li>
-                            <li><a href="#section2" class="smoothScroll">HOW WE WORK</a></li>
-                            <li><a href="#section3" class="smoothScroll">PRICING</a></li>
-                            <li><a href="#section4" class="smoothScroll">OUR TEAM</a></li>
-                            <li><a href="#section5" class="smoothScroll">CONTACT</a></li>                       
-                        </ul>
-                    </div>                    
-                </nav>
-            </div>-->
-            
-                
-            
-            <!--<div class="header-text">                
-                <h1>NG Graphics</h1>                 
-                <div class="gradient-underline"></div>                
-                <h4>Pre-Press House, CTP Solutions & Block Making.</h4>
-                <h5>Indore, Madhya Pradesh.</h5>                
-                <div class="row">
-                    <div class="header-button">                        
-                        <a class="smoothScroll button" href="#section1">Learn More</a>
-                        <a href="#section5" class="smoothScroll button" >Request Quote</a>                      
-                    </div>                
-                </div>                
-            </div>   -->    
-            
-        </header>
-        
-        <div id="fullpage">
-            <section id="section1" class="what-we-do js--what-we-do">  
-                <h2>What we do
-                    <div class='animatedParent' data-appear-top-offset='-350'>
-                    <div class="animated fadeInDownShort ">                    
-                    <div class="underline-box">
-                    </div>
-                    </div>
-                    </div>            
-                </h2>
-                <div class="row what-we-do-desc">   
-                    <div class="col span-1-of-4">                    
-                            <div class="purple-row">
-                                <i class="ion-ios-timer icon-big"></i>
-                                Our Experience
-                            </div>
-
-
-                            <div class="grey-box">                                                    
-                                <p>We have over 25 years of experience in developing CTP (violet) plates, film processing and block making. Our pre-press house is known for quality, commitment & timely delivery.
-                                </p>                    
-                            </div> 
-
-                    </div>        
-
-                    <div class="col span-1-of-4">                    
-                        <div class="purple-row">
-                            <i class="ion-printer icon-big"></i>
-                            CTP
-                        </div>
-
-
-                        <div class="grey-box">                        
-                            <p>Computer-to-plate (CTP) is an imaging technology used in modern printing processes. In this technology, an image created in a Desktop Publishing (DTP) application is output directly to a printing plate. 
-                            </p>
-                        </div>  
-
-                    </div>             
-
-                    <div class="col span-1-of-4">
-                        <div class="purple-row">
-                            <i class="ion-happy icon-big"></i>
-                            Our Customers
-                        </div>
-
-
-                        <div class="grey-box">                        
-                            <p>Our customers range from offset printing houses to leading newspaper agencies across MP. We have a 5-star reputation within our customers. Feel free to contact us to get references.
-                            </p>
-                        </div> 
-
-                    </div>             
-
-                    <div class="col span-1-of-4">
-                        <div class="purple-row">
-                            <i class="ion-cash icon-big"></i>
-                            Pricing
-                        </div>
-
-
-                        <div class="grey-box">                        
-                            <p>Our pricing is competitive, but we don't sacrifice quality. Please look at our pricing section or feel free to drop us an email. Don't forget to ask us for a quote.
-                            </p>
-                        </div>                    
-
-                    </div> 
-
-
-
-
-                </div>
-            </section>
-
-            <section id="section2" class="how-we-work">
-                <h2>How We Work
-                    <div class='animatedParent' data-appear-top-offset='-350'>
-                    <div class="animated fadeInDownShort ">                    
-                    <div class="underline-box">
-                    </div>
-                    </div>
-                    </div>            
-                </h2>
-
-                    <div class="row">
-                        <div class="col span-1-of-3">            
-                            <div class="row steps">
-                                <div class="step-number">
-                                    <p>1</p>                            
-                                </div>                            
-                            </div>
-
-
-                            <div class="row steps-icon">
-                                <i class="ion-email"></i>
-                            </div>
-
-                            <div class="row steps-text">
-                                <p>Send us an e-mail with attached picture of the poster that you want to convert to a plate. This can be in .jpeg or .png format. </p>
-                            </div>
-
-                        </div>
-
-                        <div class="col span-1-of-3">
-
-                            <div class="row steps">
-                                <div class="step-number">
-                                    <p>2</p>
-                                </div>
-                            </div>
-
-                            <div class="row steps-icon">
-                                <i class="ion-clock"></i>
-
-                            </div>
-
-                            <div class="row steps-text">
-                                <p>Give us 1-2 business days to process the picture. You can always call us or check the status of your job online. </p>
-                            </div>
-                        </div>
-
-                        <div class="col span-1-of-3">
-
-                            <div class="row steps">
-                                <div class="step-number">
-                                    <p>3</p>
-                                </div>
-                            </div>
-
-                            <div class="row steps-icon">
-                                <i class="ion-paper-airplane"></i>
-                            </div>
-
-                            <div class="row steps-text">
-                                <p>Once we have processed the plate for your image, we will ship it out to you for free! You should recieve your plate within 1-2 business days.</p>
-                            </div>
-                        </div>
-
-                    </div>
-            </section>
-
-            <section id="section3" class="pricing">
-                <h2>Pricing
-                    <div class='animatedParent' data-appear-top-offset='-350'>
-                    <div class="animated fadeInDownShort ">                    
-                    <div class="underline-box">
-                    </div>
-                    </div>
-                    </div>            
-                </h2>
-            </section>
-
-            <section id="section4" class="about-us"> 
-                <h2> OUR TEAM 
-                    <div class='animatedParent' data-appear-top-offset='-350'>
-                    <div class="animated fadeInDownShort ">                    
-                    <div class="underline-box">
-                    </div>
-                    </div>
-                    </div>            
-                </h2>
-                <div class="row">                
-                    <div class="col span-1-of-3">                                        
-                        <div class="owners">    
-                            <div class="owners-img">
-                                <img src="Images/niks.png">
-                            </div>  
-
-                            <div class="owners-desc">
-                                <h3>Gopal Tiwari</h3>
-                                <h4>CEO & Director</h4>
-                                <div class="underline"> </div>
-                                <p>   
-                                    <i class="ion-ios-telephone icon-small"></i>
-                                    : +(91) 98260-32486, 0731-4004063<br>
-                                    <i class="ion-ios-email icon-small"></i>
-                                    : gopaltiwari@nggraphics.com<br>
-                                    <i class="ion-ios-location icon-small"></i>
-                                    : 11/2 Snehlataganj, Indore M.P 452010<br>
-
-                                </p>              
-                            </div>
-                        </div>                    
-                    </div>
-
-                    <div class="col span-1-of-3">                                        
-                        <div class="owners">    
-                            <div class="owners-img">
-                                <img src="Images/niks.png">
-                            </div>  
-
-                            <div class="owners-desc">
-                                <h3>Nikhil Tiwari</h3>
-                                <h4>VP, Operations</h4>
-                                <div class="underline"> </div>
-                                <p>   
-                                    <i class="ion-ios-telephone icon-small"></i>
-                                    : +(91) 99933-69996, 0731-4004063<br>
-                                    <i class="ion-ios-email icon-small"></i>
-                                    : nikhiltiwari@nggraphics.com<br>
-                                    <i class="ion-ios-location icon-small"></i>
-                                    : 11/2 Snehlataganj, Indore M.P 452010<br>
-
-                                </p>              
-                            </div>
-                        </div>                    
-                    </div>
-
-                    <div class="col span-1-of-3">                                        
-                        <div class="owners">    
-                            <div class="owners-img">
-                                <img src="Images/nirmal.png">
-                            </div>  
-
-                            <div class="owners-desc">
-                                <h3>Nirmal Tiwari</h3>
-                                <h4>Software & App Development</h4>
-                                <div class="underline"> </div>
-                                <p>   
-                                    <i class="ion-ios-telephone icon-small"></i>
-                                    : +(91) 98260-32486, 0731-4004063<br>
-                                    <i class="ion-ios-email icon-small"></i>
-                                    : nirmaltiwari@nggraphics.com<br>
-                                    <i class="ion-ios-location icon-small"></i>
-                                    : 11/2 Snehlataganj, Indore M.P 452010<br>
-
-                                </p>              
-                            </div>
-                        </div>                    
-                    </div>                                
-                </div>                      
-            </section>          
-
-            <section id = "section5" class = "contact-us">     
-            <h2>CONTACT-US
-                <div class='animatedParent' data-appear-top-offset='-350'>
-                <div class="animated fadeInDownShort ">                    
-                <div class="underline-box">
-                </div>
-                </div>
-                </div>            
-            </h2>
-            <div class = "row">
-                <div class="map"></div>
-
-                <div class="form-box">
-                    <div class="row">
-                        <form method="post" action="formToEmail.php" class="contact-form">
-
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label for="name">Name:</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <input type="text" name="name" id="name" placeholder="Your name" required>
-                                </div>
-                            </div>                        
-
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label for="Phone">Phone:</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <input type="text" name="Phone" id="Phone" placeholder="Phone #">
-                                </div>
-                            </div>                        
-
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label for="Email">Email:</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <input type="email" name="Email" id="Email" placeholder="Email Address">
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label for="request-type">Request Type:</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <select name="request" id="request">
-                                        <option value="Price-quote" selected>Price Quotation</option>
-                                        <option value="Job-status">Job Status</option>
-                                        <option value="other">Other Enquiry</option>
-                                    </select>
-                                </div>
-                            </div> 
-
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label>Your Message:</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <textarea name="message" placeholder="Your message" class="message-textarea"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col span-1-of-3">
-                                    <label>&nbsp;</label>
-                                </div>
-                                <div class="col span-2-of-3">
-                                    <input type="submit" id="send-btn" value="Send it !">
-                                </div>
-                            </div>
-                        </form>                    
-                    </div>
-                </div>  
-            </div>
-        </section>
-        
-        <div class="gradient-row">
-            
-        </div>
-            
-        <footer>
-            <div class="footer-icon">
-                <a href="#section1" class="smoothScroll"><i class="ion-ios-flower footer-logo"></i></a>                                      
-            </div>
-            
-            <div class="footer-content">
-                <div class="footer-row">
-                    <p>NG Graphics Pvt. Ltd. Address: 11/2 Snehlataganj, Indore MP 452010. Work: 0731-4004063, Cell: 98260-32486.</p>       
+                    </a>
+                    <h3 class="navbar-text">NG GRAPHICS</h3>
                 </div>
                 
-                <div class="footer-row">
-                    <p>
-                        &copy;2015 NG Graphics Pvt. Ltd. All rights reserved.<br>
-                        Developed with love in California.
-                    </p>             
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
                 </div>
-            </div>            
-        </footer>
-        
-        </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-    <script src="/js/imakewebthings-waypoints-13ae054/lib/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="/js/gmaps.js"></script>
-    <!--<script src="http://maps.google.com/maps/api/js?sensor=true"></script>-->
-    <script src="/js/script.js"></script>
-    <script src="/js/css3-animate-it.js"></script>
-    <script src="/js/smoothscroll.js"></script>
-    <script src="/js/fullPage.js-master/jquery.fullPage.min.js"></script>
+                
+            </div>
+        </nav>
 
-    
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-6 box">
+                    <p>col1</p>
+                </div>
+                
+                <div class="col-md-6 box">
+                    <p>col2</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
     </body>
-
 </html>
+

@@ -32,8 +32,6 @@ $(document).ready (
             content: '<p>NG Graphics<br>11/2 Snehlataganj, Indore<br>Madhya Pradesh, 452010<br>Ph:98260-32486<\p>'
         }
     });
-
-    
     });
 
 
