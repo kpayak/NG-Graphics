@@ -8,6 +8,13 @@ h1 {
 
 }
 
+h2 {
+	line-height: 0.8;
+}
+
+p {
+	font-size: 20px;
+}
 .frontPage {
 	height: 100vh;		
 	background-color: black;
@@ -26,10 +33,22 @@ h1 {
 }
 
 .underline {
-	background-color: red;
+	height: 2px;
+	background-image: linear-gradient(to right, transparent 0%, #e74c3c, transparent 100%);	
 }
 
-.icon-logo {
-    font-size: 30px;
-    color: #fff;
+.locationIcon {		
+	font-size: 15px;
+	margin-right: 5px;
+}
+
+.btn-default {
+	border-radius: 20px;
+	font-size: 15px;
+	text-transform: uppercase;
+	background-color: #e74c3c;
+	color: #fff;
+	font-weight: 100;
+	border: none;
+
 }
