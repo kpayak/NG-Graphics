@@ -6,11 +6,13 @@
 
 h1 {
     font-weight: 500;
+    font-size: 50px;
 }
 
 h2 {
 	font-weight: 300;
     font-style: italic;
+    font-size: 30px;
 }
 
 p {
@@ -21,7 +23,7 @@ p {
 .frontPage {
 	height: 100vh;		
 	/*background-color: black;*/
-    background-image: linear-gradient(rgba(29, 4, 19, 0.8),rgba(28, 4, 4, 0.8)), url(/Images/india1.jpg);
+    background-image: linear-gradient(rgba(29, 4, 19, 0.6),rgba(28, 4, 4, 0.6)), url(/Images/india1.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 	color: #fff;	
@@ -42,7 +44,7 @@ p {
 #navBarMenu > ul > li > a:visited {
     color: #fff;
     border-bottom: 1px solid transparent;
-    transition: border-bottom 1s, color 1s;
+    transition: border-bottom 0.5s, color 0.5s;
 }
 
 #navBarMenu > ul > li > a:hover,
@@ -60,19 +62,20 @@ p {
 
 .underline {
 	height: 2px;
-	background-image: linear-gradient(to right, transparent 0%, #e74c3c, transparent 100%);	
+	background-image: linear-gradient(to right, transparent 0%, #d35400, transparent 100%);	
 }
 
 .locationIcon {		
 	font-size: 15px;
 	margin-right: 5px;
+    color: #fff;
 }
 
 .btn-default {
 	border-radius: 5px;
-	font-size: 15px;
+	font-size: 20px;
 	text-transform: uppercase;
-	background-color: #e74c3c;
+	background-color: #d35400;
 	color: #fff;
 	font-weight: 300;
 	border: none;    
