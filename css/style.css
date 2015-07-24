@@ -1,12 +1,32 @@
 
 * {
     font-family: 'Lato';
-    color: #fff;
+    color: #b8b8b8;
 }
 
+h1 {
 
-.box {
-    background-color: bisque;
+}
+
+.frontPage {
+	height: 100vh;		
+	background-color: black;
+	color: #fff;
+	
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+.vertical-align {
+	margin-top: 25%;	
+}
+
+.underline {
+	background-color: red;
 }
 
 .icon-logo {
