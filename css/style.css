@@ -23,7 +23,7 @@ p {
 .frontPage {
 	height: 100vh;		
 	/*background-color: black;*/
-    background-image: linear-gradient(rgba(29, 4, 19, 0.6),rgba(28, 4, 4, 0.6)), url(/Images/india1.jpg);
+    background-image: linear-gradient(rgba(29, 4, 19, 0.0),rgba(28, 4, 4, 0.6)), url(/Images/india1.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 	color: #fff;	
