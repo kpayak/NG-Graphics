@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-	font-weight: 100;    
+	font-weight: 100;
     font-size: 21px;
     text-transform: uppercase;
 }
@@ -26,11 +26,11 @@ p {
 }
 
 .frontPage {
-	height: 100vh;		
+	height: 100vh;
 	background-color: #fff;
     /*background-image: linear-gradient(rgba(29, 4, 19, 0.0),rgba(28, 4, 4, 0.9)),url(/Images/universe.jpg);*/
     background-size: 100% 100%;
-    background-attachment: fixed;	
+    background-attachment: fixed;
 }
 
 .navbar {
@@ -40,13 +40,13 @@ p {
 	border-radius: 0;
 }
 
-#navBarMenu > ul > li > a {    
+#navBarMenu > ul > li > a {
     /*padding-bottom: 5px;*/
 }
 
 #navBarMenu > ul > li > a:link,
 #navBarMenu > ul > li > a:visited {
-    
+
     color: black;
     border: 1px solid transparent;
     transition: border-bottom 0.5s, color 0.5s;
@@ -55,48 +55,48 @@ p {
 #navBarMenu > ul > li > a:hover,
 #navBarMenu > ul > li > a:focus,
 #navBarMenu > ul > li > a:active {
-    color: #2ecc71; 
-    border-bottom: 1px solid #2ecc71;    
+    color: #2ecc71;
+    border-bottom: 1px solid #2ecc71;
 }
 
 .vertical-align {
-	margin-top: 25%;	
+	margin-top: 25%;
 }
 
 .underline {
 	height: 2px;
-	background-image: linear-gradient(to right, transparent 0%, #2ecc71, transparent 100%);	
+	background-image: linear-gradient(to right, transparent 0%, #2ecc71, transparent 100%);
 }
 
-.locationIcon {		
+.locationIcon {
 	font-size: 15px;
-	margin-right: 5px;    
+	margin-right: 5px;
 }
 
 .btn-default {
-    margin-right: 10px;	
+    margin-right: 10px;
 	font-size: 15px;
 	text-transform: uppercase;
     border: 1px solid transparent;
 	background-color: #2ecc71;
     padding: 10px;
-    color: #fff;   
+    color: #fff;
     transition: background-color 0.5s, border 0.5s;
 }
 
 .btn-default:hover,
 .btn-default:active,
-.btn-default:focus {	
-	background-color: #fff;  
+.btn-default:focus {
+	background-color: #fff;
     border: 1px solid #2ecc71;
     color:black;
-    
+
 }
 
 .sectionDivider {
     height: 2px;
-    background-image: linear-gradient(to right, transparent 0%, #ecf0f1, transparent 100%);	
-    
+    background-image: linear-gradient(to right, transparent 0%, #ecf0f1, transparent 100%);
+
 }
 
 /* ------------ ABOUT US SECTION --------------*/
@@ -107,20 +107,47 @@ p {
 /* ------------ OUR TEAM SECTION --------------*/
 .ourTeam {
     height: 100vh;
-    margin-top:20px;
+    margin-top:30px;
 }
 
 .left {
-    background-color: green;
-    height:150px;
+		height: 100%;
 }
 
 .middle {
-    background-color: grey;
-    height:150px;
+    height:100%;
 }
 
 .right {
-    background-color: black;
-    height:150px;
+    height:100%;
+}
+
+.photo {
+	margin-top:10px;
+	height:350px;
+	background-color:grey;
+}
+
+.name {
+	padding-left:0px;
+	color:#fff;
+	height:80px;
+	background-color:#e74c3c;
+	margin-bottom:10px;
+}
+
+.square {
+	display: inline-block;
+	width:500px;
+	height: 500px;
+	background-color: blue;
+	z-index: 10;
+}
+
+.anothersquare {
+	display: inline-block;
+	width:500px;
+	height:500px;
+	background-color: black;
+	transform: perspective(50px);
 }
