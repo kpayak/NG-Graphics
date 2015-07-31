@@ -74,18 +74,19 @@ p {
 }
 
 .btn-default {
-	border-radius: 0px;
+    margin-right: 10px;	
 	font-size: 15px;
 	text-transform: uppercase;
     border: 1px solid transparent;
 	background-color: #2ecc71;
     padding: 10px;
     color: #fff;   
-    
     transition: background-color 0.5s, border 0.5s;
 }
 
-.btn-default:hover {	
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {	
 	background-color: #fff;  
     border: 1px solid #2ecc71;
     color:black;
@@ -100,5 +101,26 @@ p {
 
 /* ------------ ABOUT US SECTION --------------*/
 .aboutUs {
-    height: 1000px;
+    height: 100vh;
+}
+
+/* ------------ OUR TEAM SECTION --------------*/
+.ourTeam {
+    height: 100vh;
+    margin-top:20px;
+}
+
+.left {
+    background-color: green;
+    height:150px;
+}
+
+.middle {
+    background-color: grey;
+    height:150px;
+}
+
+.right {
+    background-color: black;
+    height:150px;
 }
