@@ -92,11 +92,15 @@ p {
 	}
 
 	.locationIcon {
-		font-size: 10px;
+		font-size: 11px;
 	}
 
 	.locationInfo {
-		font-size: 10px;
+		font-size: 11px;
+	}
+
+	.vertical-align {
+		margin-top: 50%;
 	}
 }
 
