@@ -123,31 +123,39 @@ p {
 }
 
 .photo {
-	margin-top:10px;
+	margin-top:00px;
 	height:350px;
 	background-color:grey;
 }
 
 .name {
-	padding-left:0px;
+	padding-left:00px;
 	color:#fff;
 	height:80px;
 	background-color:#e74c3c;
-	margin-bottom:10px;
+	margin-bottom:00px;
 }
 
-.square {
-	display: inline-block;
-	width:500px;
-	height: 500px;
-	background-color: blue;
-	z-index: 10;
+.name h3:after {
+	position: absolute;
+	top: 340px;
+	left: -10px;
+	content:' ';
+	width: 00px;
+	height: 00px;
+	border-top: 10px solid #b71c1c;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-left:10px solid transparent;
+	transform: rotateZ(-45deg);
 }
 
-.anothersquare {
-	display: inline-block;
-	width:500px;
-	height:500px;
-	background-color: black;
-	transform: perspective(50px);
+.name h3:before {
+	position: absolute;
+	top: 350px;
+	left: -14px;
+	content:' ';
+	width: 14px;
+	height: 80px;
+	background-color: #e74c3c;
 }
