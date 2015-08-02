@@ -14,18 +14,13 @@ h1 {
     /*font-family: 'Rock Salt', cursive;*/
 }
 
-@media screen and (max-width: 767px) {
-  h1 {
-    font-size:30px;
-  }
-}
-
-
 h2 {
 	font-weight: 100;
     font-size: 21px;
     text-transform: uppercase;
 }
+
+
 
 p {
 	font-size: 20px;
@@ -78,7 +73,33 @@ p {
 .locationIcon {
 	font-size: 15px;
 	margin-right: 5px;
+	color:#2ecc71;
 }
+
+.locationInfo {
+	font-size:14px;
+	text-transform:uppercase;
+	font-weight:300;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size:40px;
+  }
+
+	h2 {
+		font-size:15px;
+	}
+
+	.locationIcon {
+		font-size: 10px;
+	}
+
+	.locationInfo {
+		font-size: 10px;
+	}
+}
+
 
 .btn-default {
     margin-right: 10px;
