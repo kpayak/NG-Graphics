@@ -15,13 +15,12 @@ h1 {
 }
 
 h2 {
-	font-weight: 100;
     font-size: 21px;
     text-transform: uppercase;
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 h5 {
@@ -29,15 +28,22 @@ h5 {
 }
 
 h6 {
-	font-size: 11px;
+	font-size: 12px;
 	text-transform: uppercase;
 }
-
-
 
 p {
 	font-size: 20px;
     font-weight: 300;
+}
+
+.sectionHeader p {
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: 600;
+	font-size: 50px;
+	color: grey;
+	margin-left: 50px;
+	margin-bottom: 40px;
 }
 
 .frontPage {
@@ -120,10 +126,10 @@ p {
 
 .btn-default {
     margin-right: 10px;
-	font-size: 15px;
-	text-transform: uppercase;
+		font-size: 15px;
+		text-transform: uppercase;
     border: 1px solid transparent;
-	background-color: #2ecc71;
+		background-color: #2ecc71;
     padding: 10px;
     color: #fff;
     transition: background-color 0.5s, border 0.5s;
@@ -140,8 +146,7 @@ p {
 
 .sectionDivider {
     height: 2px;
-    background-image: linear-gradient(to right, transparent 0%, #ecf0f1, transparent 100%);
-
+    background-image: linear-gradient(to right, transparent 0%, green, transparent 100%);
 }
 
 /* ------------ ABOUT US SECTION --------------*/
@@ -151,8 +156,9 @@ p {
 
 /* ------------ OUR TEAM SECTION --------------*/
 .ourTeam {
-    height: 100vh;
-    margin-top:30px;
+    padding-top:50px;
+		padding-bottom:50px;
+		background-color: #ecf0f1;
 }
 
 .left {
@@ -179,7 +185,7 @@ p {
 .nameRed {
 	padding-left:00px;
 	color:#fff;
-	height:80px;
+	height:100px;
 	background-color:#e74c3c;
 }
 
@@ -203,15 +209,16 @@ p {
 	left: -14px;
 	content:' ';
 	width: 14px;
-	height: 80px;
+	height: 100px;
 	background-color: #e74c3c;
 }
 
 /* INDIGO CARD */
+
 .nameIndigo {
 	padding-left:00px;
 	color:#fff;
-	height:80px;
+	height:100px;
 	background-color:#3f51b5;
 }
 
@@ -235,40 +242,40 @@ p {
 	left: -14px;
 	content:' ';
 	width: 14px;
-	height: 80px;
+	height: 100px;
 	background-color: #3f51b5;
 }
 
-/* PURPLE CARD */
-.namePurple {
+/* PINK CARD */
+.namePink {
 	padding-left:00px;
 	color:#fff;
-	height:80px;
-	background-color:#673ab7;
+	height:100px;
+	background-color:#e91e63;
 }
 
-.namePurple h3:after {
+.namePink h3:after {
 	position: absolute;
 	top: 340px;
 	left: -10px;
 	content:' ';
 	width: 00px;
 	height: 00px;
-	border-top: 10px solid #311b92;
+	border-top: 10px solid #880e4f;
 	border-bottom: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-left:10px solid transparent;
 	transform: rotateZ(-45deg);
 }
 
-.namePurple h3:before {
+.namePink h3:before {
 	position: absolute;
 	top: 350px;
 	left: -14px;
 	content:' ';
 	width: 14px;
-	height: 80px;
-	background-color: #673ab7;
+	height: 100px;
+	background-color: #e91e63;
 }
 
 @media screen and (max-width: 767px) {
@@ -295,4 +302,9 @@ p {
 	.name {
 		margin-bottom: 10px;
 	}
+
+	.sectionHeader p {
+		font-size: 35px;
+	}
+
 }
