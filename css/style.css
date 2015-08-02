@@ -20,6 +20,19 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h6 {
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
 
 
 p {
@@ -155,20 +168,22 @@ p {
 }
 
 .photo {
-	margin-top:00px;
+	margin-top:0px;
 	height:350px;
 	background-color:grey;
 }
 
-.name {
+/* BEGIN MATERIAL CARD */
+
+/* RED CARD */
+.nameRed {
 	padding-left:00px;
 	color:#fff;
 	height:80px;
 	background-color:#e74c3c;
-	margin-bottom:00px;
 }
 
-.name h3:after {
+.nameRed h3:after {
 	position: absolute;
 	top: 340px;
 	left: -10px;
@@ -182,7 +197,7 @@ p {
 	transform: rotateZ(-45deg);
 }
 
-.name h3:before {
+.nameRed h3:before {
 	position: absolute;
 	top: 350px;
 	left: -14px;
@@ -190,4 +205,94 @@ p {
 	width: 14px;
 	height: 80px;
 	background-color: #e74c3c;
+}
+
+/* INDIGO CARD */
+.nameIndigo {
+	padding-left:00px;
+	color:#fff;
+	height:80px;
+	background-color:#3f51b5;
+}
+
+.nameIndigo h3:after {
+	position: absolute;
+	top: 340px;
+	left: -10px;
+	content:' ';
+	width: 00px;
+	height: 00px;
+	border-top: 10px solid #1a237e;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-left:10px solid transparent;
+	transform: rotateZ(-45deg);
+}
+
+.nameIndigo h3:before {
+	position: absolute;
+	top: 350px;
+	left: -14px;
+	content:' ';
+	width: 14px;
+	height: 80px;
+	background-color: #3f51b5;
+}
+
+/* PURPLE CARD */
+.namePurple {
+	padding-left:00px;
+	color:#fff;
+	height:80px;
+	background-color:#673ab7;
+}
+
+.namePurple h3:after {
+	position: absolute;
+	top: 340px;
+	left: -10px;
+	content:' ';
+	width: 00px;
+	height: 00px;
+	border-top: 10px solid #311b92;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-left:10px solid transparent;
+	transform: rotateZ(-45deg);
+}
+
+.namePurple h3:before {
+	position: absolute;
+	top: 350px;
+	left: -14px;
+	content:' ';
+	width: 14px;
+	height: 80px;
+	background-color: #673ab7;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size:35px;
+  }
+
+	h2 {
+		font-size:15px;
+	}
+
+	.locationIcon {
+		font-size: 11px;
+	}
+
+	.locationInfo {
+		font-size: 11px;
+	}
+
+	.vertical-align {
+		margin-top: 50%;
+	}
+
+	.name {
+		margin-bottom: 10px;
+	}
 }
