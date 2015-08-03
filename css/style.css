@@ -33,7 +33,7 @@ h6 {
 }
 
 p {
-	font-size: 20px;
+		font-size: 20px;
     font-weight: 300;
 }
 
@@ -43,7 +43,7 @@ p {
 	font-size: 50px;
 	color: grey;
 	margin-left: 50px;
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 }
 
 .frontPage {
@@ -67,17 +67,26 @@ p {
 
 #navBarMenu > ul > li > a:link,
 #navBarMenu > ul > li > a:visited {
-
     color: black;
     border: 1px solid transparent;
-    transition: border-bottom 0.5s, color 0.5s;
+    transition: border-bottom 0.2s, color 0.2s;
 }
 
 #navBarMenu > ul > li > a:hover,
 #navBarMenu > ul > li > a:focus,
 #navBarMenu > ul > li > a:active {
-    color: #2ecc71;
-    border-bottom: 1px solid #2ecc71;
+    color: #2ecc71;    
+}
+
+#navBarMenu > ul > li > a:hover::after {
+    content: " ";
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #2ecc71;
+    background: linear-gradient(to left, transparent 0%,#2ecc71,transparent 100%);
 }
 
 .vertical-align {
@@ -125,22 +134,28 @@ p {
 
 
 .btn-default {
-    margin-right: 10px;
-		font-size: 15px;
-		text-transform: uppercase;
-    border: 1px solid transparent;
-		background-color: #2ecc71;
-    padding: 10px;
+    margin-right: 35px;
+    font-size: 15px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: 1px solid #2ecc71;
+    background-color: #2ecc71;
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: #fff;
-    transition: background-color 0.5s, border 0.5s;
+    transition: all 0.3s;
 }
 
 .btn-default:hover,
 .btn-default:active,
 .btn-default:focus {
-	background-color: #fff;
+	background-color: #2ecc71;;
     border: 1px solid #2ecc71;
-    color:black;
+    color:#fff;
+    -webkit-box-shadow: 10px 10px 50px 2px rgba(172, 171, 171, 0.63);
+    -moz-box-shadow: 10px 10px 50px 2px rgba(172, 171, 171, 0.63);
+    box-shadow: 5px 5px 16px 1px rgba(198, 196, 196, 1);
 
 }
 
@@ -177,6 +192,26 @@ p {
 	margin-top:0px;
 	height:350px;
 	background-color:grey;
+}
+
+.photo:after {
+    content: ' ';
+    position: absolute;
+    top:20px;
+    left:80%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.hamMenu {
+    position: absolute;
+    font-weight: 100;
+    color: #fff;
+    font-size: 25px;
+    top:7.5%;
+    left:83.5%;
 }
 
 /* BEGIN MATERIAL CARD */
@@ -304,6 +339,7 @@ p {
 	}
 
 	.sectionHeader p {
+		margin-left: 0;
 		font-size: 35px;
 	}
 
