@@ -1,9 +1,5 @@
 
 * {
-	font-family: 'Syncopate', sans-serif;
-    /*font-family: 'Josefin Sans', sans-serif;*/
-    /*font-family: 'Nunito', sans-serif;*/
-    /*font-family: 'Lato', sans-serif;*/
     color: black;
 }
 
@@ -38,15 +34,18 @@ p {
 }
 
 .sectionHeader p {
-	font-family: 'Julius Sans One', sans-serif;
-	font-weight: 600;
-	font-size: 50px;
-	color: grey;
+    font-family: 'Montserrat', sans-serif;	
+    font-weight: 400;
+	font-size: 40px;
+	color: #575757;
 	margin-left: 50px;
 	/*margin-bottom: 40px;*/
+    text-transform: uppercase;
 }
 
+
 .frontPage {
+    font-family: 'Syncopate', sans-serif;
 	height: 100vh;
 	background-color: #fff;
     /*background-image: linear-gradient(rgba(29, 4, 19, 0.0),rgba(28, 4, 4, 0.9)),url(/Images/universe.jpg);*/
@@ -172,8 +171,10 @@ p {
 /* ------------ OUR TEAM SECTION --------------*/
 .ourTeam {
     padding-top:50px;
-		padding-bottom:50px;
-		background-color: #ecf0f1;
+    padding-bottom:50px;
+    background-color: #ebebeb;
+    font-family: 'Montserrat', sans-serif;	
+    font-weight: 100;
 }
 
 .left {
@@ -194,34 +195,23 @@ p {
 	background-color:grey;
 }
 
-.photo:after {
-    content: ' ';
-    position: absolute;
-    top:20px;
-    left:80%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-}
-
 .hamMenu {
     position: absolute;
     font-weight: 100;
     color: #fff;
-    font-size: 25px;
-    top:7.5%;
-    left:83.5%;
+    font-size: 30px;
+    top:7%;
+    left:84%;
+    cursor: pointer;
 }
 
 /* BEGIN MATERIAL CARD */
 
 /* RED CARD */
 .nameRed {
-	padding-left:00px;
 	color:#fff;
-	height:100px;
-	background-color:#e74c3c;
+	height:80px;
+	background-color:#2ecc71;
 }
 
 .nameRed h3:after {
@@ -231,7 +221,7 @@ p {
 	content:' ';
 	width: 00px;
 	height: 00px;
-	border-top: 10px solid #b71c1c;
+	border-top: 10px solid #22814a;
 	border-bottom: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-left:10px solid transparent;
@@ -244,73 +234,8 @@ p {
 	left: -14px;
 	content:' ';
 	width: 14px;
-	height: 100px;
-	background-color: #e74c3c;
-}
-
-/* INDIGO CARD */
-
-.nameIndigo {
-	padding-left:00px;
-	color:#fff;
-	height:100px;
-	background-color:#3f51b5;
-}
-
-.nameIndigo h3:after {
-	position: absolute;
-	top: 340px;
-	left: -10px;
-	content:' ';
-	width: 00px;
-	height: 00px;
-	border-top: 10px solid #1a237e;
-	border-bottom: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-left:10px solid transparent;
-	transform: rotateZ(-45deg);
-}
-
-.nameIndigo h3:before {
-	position: absolute;
-	top: 350px;
-	left: -14px;
-	content:' ';
-	width: 14px;
-	height: 100px;
-	background-color: #3f51b5;
-}
-
-/* PINK CARD */
-.namePink {
-	padding-left:00px;
-	color:#fff;
-	height:100px;
-	background-color:#e91e63;
-}
-
-.namePink h3:after {
-	position: absolute;
-	top: 340px;
-	left: -10px;
-	content:' ';
-	width: 00px;
-	height: 00px;
-	border-top: 10px solid #880e4f;
-	border-bottom: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-left:10px solid transparent;
-	transform: rotateZ(-45deg);
-}
-
-.namePink h3:before {
-	position: absolute;
-	top: 350px;
-	left: -14px;
-	content:' ';
-	width: 14px;
-	height: 100px;
-	background-color: #e91e63;
+	height: 80px;
+	background-color: #2ecc71;
 }
 
 @media screen and (max-width: 767px) {
