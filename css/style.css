@@ -216,12 +216,13 @@ p {
 }
 
 .materialCard .ownerImage {
-    height:100%;
+    height:90%;
     width: 100%;
     transition: 0.2s all;
 }
 
 .materialCard.active .ownerImage {
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -229,51 +230,63 @@ p {
 .descButton:link,
 .descButton:visited {
     position: absolute;
-    top: 40px;
-    height: 40px;
-    width: 40px;
-    border-radius: 0%;
-    left: 80%;
-    background-color: red;
+    top: 20px;
+    height: 31px;
+    width: 31px;
+    border-radius: 50%;
+    left: 85%;
+    background-color: #9b59b6;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 .descButton:hover,
 .descButton:active {
-    background-color: aqua;
     box-shadow: 3px 3px 10px #8b8b8b;
 }
 
 .hamBar {
     display: block;
     position: absolute;
-    top: 19px;
+    top: 14px;
     left: 6px;
     right: auto;
-    width: 70%;
+    width: 60%;
     height: 2px;
     background-color: #fff;
+    transition: background-color 0.5s;
 }
 
-.hamBar::before {
-    display: block;
+.hamBar::before { 
     content: "";
     position: absolute;
-    top: -10px;
+    top: -6px;
     width: 100%;
     height: 2px;
     background-color: #fff;
 }
 
 .hamBar::after {
-    display: block;
     content: "";
     position: absolute;
-    top: 10px;
+    top: 6px;
     width: 100%;
     height: 2px;
     background-color: #fff;
+}
+
+.hamBar::before,
+.hamBar::after {
+    transition-duration: 0.5s, 0.5s;
+    transition-delay: 0.5s, 0s;
+}
+
+.hamBar::before {
+  transition-property: top, transform;
+}
+
+.hamBar::after {
+  transition-property: top, transform;
 }
 
 .materialCard.active .hamBar {
@@ -290,11 +303,16 @@ p {
     transform: rotateZ(45deg);
 }
 
+.materialCard.active .hamBar::before,
+.materialCard.active .hamBar::after {
+    transition-delay: 0s, 0.5s;
+}
+
 
 .materialCard.active .descButton {
+    background-color: black;
     position: absolute;
     top: 100px;
-    
 }
 
 .materialCard .triangle {
