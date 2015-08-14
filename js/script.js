@@ -16,10 +16,4 @@ $(".descButton").click(function () {
     
     });
 
-$(".contactIcon").hover ( function() {
-    console.log("hover detected");
-    this.css("box-shadow", "5px 5px 10px black");
-});
-
-
 

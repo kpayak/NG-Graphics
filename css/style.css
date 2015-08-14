@@ -16,10 +16,19 @@ h2 {
 
 h3 {
 	font-size: 20px;
+    font-weight: 300;
+}
+
+h4 {
+    color: #2ecc71;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
 }
 
 h5 {
 	font-size: 15px;
+    font-weight: 200;
 }
 
 h6 {
@@ -28,8 +37,9 @@ h6 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
+    color: #b7b7b7;
 }
 
 .sectionHeader p {
@@ -163,8 +173,13 @@ p {
 }
 
 /* ------------ ABOUT US SECTION --------------*/
-.aboutUs {
-    height: 100vh;
+.whatWeDo {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color: #fff;
+    box-shadow: -5px -5px 25px #d0d0d0;
 }
 
 /* ------------ OUR TEAM SECTION --------------*/
@@ -179,14 +194,26 @@ p {
     box-shadow: -5px -5px 25px #d0d0d0;
 }
 
+.strap {
+    background-color: #2ecc79;
+    margin-bottom: 50px;
+}
+
 .sectionHeaderTitle {
     font-weight: 500;
-	font-size: 45px;
-	color: #676767;
+	font-size: 30px;
+	color: #fff;
 	margin-left: 0px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 8px;
     text-align: center;
+}
+
+
+.teamDescription p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
 }
 
 @media screen and (max-width: 767px) {
@@ -196,23 +223,6 @@ p {
         text-align: center;
     }
 }
-
-.sectionHeaderDesc {
-    font-weight: 400;
-	font-size: 18px;
-	color: #676767;
-	margin-left: 0px;
-	margin-top: 40px;
-    text-align: center;    
-}
-
-@media screen and (max-width: 767px) {
-    .sectionHeaderDesc {
-        font-size: 10px;
-        margin-left: 0px;
-    }
-}
-
 
 .left {
     /*height: 100%;*/
@@ -232,7 +242,9 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-    .materialCard {        
+    .materialCard {     
+        width: 90%;
+        margin-left: 20px;
         margin-bottom: 30px;
     }
 
@@ -259,7 +271,7 @@ p {
 }
 
 .materialCard .ownerImage {
-    height:100%;
+    height:85%;
     width: 100%;
     z-index:20;
     transition: 0.4s all;
@@ -427,6 +439,7 @@ p {
 
 .description {
     position: absolute;
+    font-weight: 200;
     top: 100%;
     right: 30px;
     left: 30px;
@@ -474,7 +487,6 @@ p {
     color: #2ecc71;
     width: 100%;
     text-align:center;
-    cursor: pointer;
 }
 
 .materialCard.active .footer{
