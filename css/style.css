@@ -628,6 +628,17 @@ p {
     color: #674172;
 }
 
+input,textarea {
+    margin-bottom: 15px;
+}
+
+input {
+    border: none !important;
+    border-radius: 100%;
+    border-bottom: 1px solid #fff !important;
+    background: transparent !important;
+}
+
 
 @media screen and (max-width: 767px) {
   h1 {
