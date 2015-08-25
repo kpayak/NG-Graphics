@@ -73,43 +73,90 @@ p {
     background-attachment: fixed;
 }
 
-.navbar {
-	margin-bottom: 0;
-	background-color: #fff;
-    border: 0;
-	border-radius: 0;
+.navbarRow {
+    background-color: #674172;
+    height: 50px;
+    padding-top: 15px;
+    box-shadow: 5px 5px 45px #707070;
 }
 
-#navBarMenu > ul > li > a {
-    /*padding-bottom: 5px;*/
+.navbarRow p {
+    color: #F2F1EF;
+    font-size: 13px;
 }
 
-#navBarMenu > ul > li > a:link,
-#navBarMenu > ul > li > a:visited {
-    color: black;
-    border: 1px solid transparent;
-    transition: border-bottom 0.2s, color 0.2s;
+
+.navbarRow ul {
+    float: right;
+    list-style: none;
 }
 
-#navBarMenu > ul > li > a:hover,
-#navBarMenu > ul > li > a:focus,
-#navBarMenu > ul > li > a:active {
-    color: #674172;    
+li {
+    font-size: 13px;
+    color: #F2F1EF;
+    margin-right: 25px;
+    font-weight: 100;
+    display: inline;
+    text-decoration: none; 
 }
 
-#navBarMenu > ul > li > a:hover::after {
+.navbarRow li > a:link,
+.navbarRow li > a:visited {
+    color: #F2F1EF;
+    text-decoration: none;
+    
+}
+
+.ghost-btn:link,
+.ghost-btn:visited {
+    display: inline;
+    color: #F2F1EF;
+    border-radius: 0;
+    border: 2px solid #F2F1EF;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbarRow > ul > li > a:hover::after {
     content: " ";
     position: absolute;
     bottom: 8px;
     left: 0;
     height: 1px;
     width: 100%;
-    background: #674172;
-    background: linear-gradient(to left, transparent 0%,#674172,transparent 100%);
+    background: #F2F1EF;
+    background: linear-gradient(to left, transparent 0%,#F2F1EF,transparent 100%);
 }
 
+
+/*.navbar {
+	margin-bottom: 0;
+	background-color: #fff;
+    border: 0;
+	border-radius: 0;
+}
+
+
+.navbarRow > ul > li > a {
+    /*padding-bottom: 5px;*/
+/*}
+
+.navbarRow > ul > li > a:link,
+.navbarRow > ul > li > a:visited {
+    color: black;
+    border: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.navbarRow > ul > li > a:hover,
+.navbarRow > ul > li > a:focus,
+.navbarRow > ul > li > a:active {
+    color: #674172;    
+}*/
+
+
 .vertical-align {
-	margin-top: 25%;
+	margin-top: 10%;
 }
 
 .underline {
