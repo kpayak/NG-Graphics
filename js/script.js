@@ -1,9 +1,17 @@
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
+$(document).ready(function(){    
+    $(window).scroll(function() {
+
+        if ($(document).scrollTop() > 400) {
+            $('.navbarRow').addClass('sticky');
+        }
+        
+        else {
+            $('.navbarRow').removeClass('sticky');
+        }
+    });
 });
 
 $(".descButton").click(function () {
-    console.log("detected click");
     var card = $(this).parent().parent();
     
     if (card.hasClass('active')) {
@@ -15,5 +23,22 @@ $(".descButton").click(function () {
     }
     
     });
+
+/*function Scroll () {
+    var ytop = window.pageYOffset;
+    var nav = document.getElementById('navbarRow');
+    
+    if (ytop > 500)
+    {
+        nav.addClass('sticky');
+    }
+    
+    else {
+        nav.removeClass('sticky');
+    }
+}
+
+window.addEventListener("scroll",Scroll);*/
+
 
 

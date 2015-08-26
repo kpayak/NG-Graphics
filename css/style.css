@@ -74,17 +74,30 @@ p {
 }
 
 .navbarRow {
+    position: fixed;
     background-color: #674172;
     height: 50px;
-    padding-top: 15px;
+    width: 100%;
     box-shadow: 5px 5px 45px #707070;
+    z-index: 20;
+    transition: all 1.5s;
+}
+
+.navbarRow .navbarIcon {
+    font-size: 40px;
+    color: #F2F1EF;
+    transition: all 1.5s;
+}
+
+.textMenu {
+    padding-top: 15px;
 }
 
 .navbarRow p {
     color: #F2F1EF;
     font-size: 13px;
+    transition: all 1.5s;
 }
-
 
 .navbarRow ul {
     float: right;
@@ -104,29 +117,64 @@ li {
 .navbarRow li > a:visited {
     color: #F2F1EF;
     text-decoration: none;
-    
+    transition: all 1.5s;
 }
 
-.ghost-btn:link,
-.ghost-btn:visited {
+.navbarRow li > a:hover,
+.navbarRow li > a:focus,
+.navbarRow li > a:active {
+    color: #fff;
+}
+
+
+.navbarRow .ghost-btn:link,
+.navbarRow .ghost-btn:visited {
     display: inline;
     color: #F2F1EF;
     border-radius: 0;
-    border: 2px solid #F2F1EF;
+    border: 1px solid #F2F1EF;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 1.5s;
+}
+
+/*********** STICKY NAVIGATION **********/
+
+.navbarRow.sticky {
+    background-color: #F2F1EF;
+    opacity: 0.95;
+}
+
+.navbarRow.sticky p {
+    color:#674172;
+}
+
+.navbarRow.sticky .navbarIcon {
+    color: #674172;
+}
+
+.navbarRow.sticky li > a:link,
+.navbarRow.sticky li > a:visited {
+    color: #674172;
+    text-decoration: none;    
+}
+
+.navbarRow.sticky li > a:hover,
+.navbarRow.sticky li > a:focus,
+.navbarRow.sticky li > a:active {
+    color: #6e447b;
+}
+
+.navbarRow.sticky .ghost-btn:link,
+.navbarRow.sticky .ghost-btn:visited {
+    display: inline;
+    color: #674172;
+    border-radius: 0;
+    border: 1px solid #674172;
     padding: 10px;
     text-decoration: none;
 }
 
-.navbarRow > ul > li > a:hover::after {
-    content: " ";
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    height: 1px;
-    width: 100%;
-    background: #F2F1EF;
-    background: linear-gradient(to left, transparent 0%,#F2F1EF,transparent 100%);
-}
 
 
 /*.navbar {
@@ -156,7 +204,7 @@ li {
 
 
 .vertical-align {
-	margin-top: 10%;
+	margin-top: 15%;
 }
 
 .underline {
@@ -606,6 +654,7 @@ li {
 /* ------------------------------------------------------------------------------------------------*/
 .contactUs{
     background-color: #F2F1EF;
+    background-size: cover;
     padding-top:50px;
     padding-bottom:50px;
     font-family: 'Raleway', sans-serif;
@@ -625,6 +674,11 @@ li {
 
 .contactUs .subHeading {
     color: #674172;
+}
+
+.leftCol {
+    background-color: #F2F1EF;
+
 }
 
 input,textarea {
