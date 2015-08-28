@@ -11,7 +11,7 @@ $(document).ready(function(){
     });
 });
 
-$(".descButton").click(function () {
+/*$(".descButton").click(function () {
     var card = $(this).parent().parent();
     
     if (card.hasClass('active')) {
@@ -22,23 +22,17 @@ $(".descButton").click(function () {
         card.addClass('active');
     }
     
-    });
+    });*/
 
-/*function Scroll () {
-    var ytop = window.pageYOffset;
-    var nav = document.getElementById('navbarRow');
-    
-    if (ytop > 500)
-    {
-        nav.addClass('sticky');
-    }
-    
-    else {
-        nav.removeClass('sticky');
-    }
-}
-
-window.addEventListener("scroll",Scroll);*/
-
+$(".materialCard")
+.mouseenter(function () {
+    console.log("detected hover");
+    //var card = $(this).parent().parent();      
+    $(this).addClass('active');
+})
+.mouseleave(function(){
+    console.log("leaving");
+    $(this).removeClass('active');
+});
 
 
