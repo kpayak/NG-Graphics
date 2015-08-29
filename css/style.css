@@ -77,7 +77,7 @@ p {
 .frontPage {
     font-family: 'Syncopate', sans-serif;
 	height: 100vh;
-	background-color: #F2F1EF;
+	background-color: #674172;
 }
 
 .box {
@@ -97,7 +97,7 @@ p {
 .navbarRow {
     position: fixed;
     background-color: #674172;
-    height: 100px;
+    height: 80px;
     padding-top: 30px;
     width: 100%;
     /*box-shadow: 5px 5px 45px #707070;*/
@@ -112,7 +112,7 @@ p {
 }
 
 .mobileNavBar {
-    display: block;
+    display: none;
     width: 100%;
     position: fixed;
     padding-top: 10px;
