@@ -267,7 +267,7 @@ li {
 .whatWeDo {
     font-family: 'Raleway', sans-serif;
     height: 100%;
-    padding-top:00px;
+    padding-top:60px;
     padding-bottom:50px;
     margin-bottom: 50px;
     background-color: #F2F1EF;
@@ -751,6 +751,10 @@ form {
     
     .navbarRow {
         display: none;
+    }
+    
+    .mobileNavBar {
+        display: block;
     }
 
 
