@@ -75,19 +75,11 @@ p {
 /*----------------------------------------------------------------------------------------------------------*/
 
 .frontPage {
+    position: relative;
+    z-index: 2;
     font-family: 'Syncopate', sans-serif;
-	height: 100vh;
+	height: 80vh;
 	background-color: #674172;
-}
-
-.box {
-    position: absolute;
-    top:0;
-    left: -20px;
-    height: 90%;
-    width: 130%;
-    background-color: #674172;
-    transform: rotateZ(2deg);
 }
 
 .frontPage h2 {
@@ -97,7 +89,7 @@ p {
 .navbarRow {
     position: fixed;
     background-color: #674172;
-    height: 80px;
+    height: 50px;
     padding-top: 30px;
     width: 100%;
     /*box-shadow: 5px 5px 45px #707070;*/
