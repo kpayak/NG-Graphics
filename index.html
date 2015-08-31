@@ -14,18 +14,19 @@
 
     <body>
         
-    <section class = "frontPage">
+    <section id = "frontPage">
         <div class="container-fluid">
             <div class="row navbarRow">
                 <div class="col-xs-2 col-xs col-xs-offset-1">
                     <i class="ion-ios-flower navbarIcon"></i> 
                 </div>
                 
-                <div class="col-xs-8 textMenu">
+                <div class="col-xs-9 textMenu">
                     <ul>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">OUR TEAM</a></li>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#whatWeDo">ABOUT US</a></li>
+                        <li><a href="#howWeWork">HOW WE WORK</a></li>
+                        <li><a href="#ourTeam">OUR TEAM</a></li>
+                        <li><a href="#contactUs">CONTACT US</a></li>
                         <li><a href="#" class="btn ghost-btn">LOGIN</a></li>
                     </ul>
                 </div>
@@ -36,7 +37,7 @@
                     <i class="ion-ios-flower mobileIcon"></i> 
                 </div>
                 
-                <div class="col-xs-1 col-xs-offset-9">
+                <div class="col-xs-1 col-xs-offset-10">
                     <i class="ion-navicon mobileIcon"></i>
                 </div>
                 
@@ -90,8 +91,8 @@
             </div>
         </div>        
     </div>
-
-    <section class="whatWeDo">
+            
+    <section id="whatWeDo">
         <div class="container-fluid">
             <div class="row">
                 <div class="heading">About Us.</div>
@@ -133,7 +134,7 @@
     </div>
     
     
-    <section class="howWeWork">
+    <section id="howWeWork">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -184,7 +185,7 @@
         </div>        
     </div>
 
-    <section class="ourTeam">
+    <section id="ourTeam">
         <div class="container-fluid">
             <div class="row">
                 <div class="heading">Our Team.</div>
@@ -332,27 +333,31 @@
             </div>
         </div>        
     </div>
-    <section class="contactUs">
+            
+    <section id="contactUs">
         <div class="container-fluid">
             <div class="row">
-                <div class="heading">
-                    Contact Us.
-                </div>
-                <div class="subHeading">
-                    Send us an email or give us a call to ask about our pricing.
-                </div>
-            </div>
-            
-            <div class="row">
                 <div class="col-md-6 leftCol">
-                    <form>
-                        <input type="text" class="form-control input-lg " id="namebox" placeholder="Name">
-                        <input type="email" class="form-control input-lg " id="emailbox" placeholder="Email">
-                        <input type="phone" class="form-control input-lg " id="phonebox" placeholder="Phone">
-                        <input type="phone" class="form-control input-lg " id="phonebox" placeholder="Subject">
-                        <textarea class="form-control" rows="8" placeholder="Your Message"></textarea>
-                        <button type="button" class="btn btn-default btn-lg btn-block">Click to send</button>
-                    </form>
+                    
+                    <div class="row">
+                        <div class="heading">
+                            Contact Us.
+                        </div>
+                        <div class="subHeading">
+                            Send us an email or give us a call to ask about our pricing.
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <form>
+                            <input type="text" class="form-control input-lg " id="namebox" placeholder="Name">
+                            <input type="email" class="form-control input-lg " id="emailbox" placeholder="Email">
+                            <input type="phone" class="form-control input-lg " id="phonebox" placeholder="Phone">
+                            <input type="phone" class="form-control input-lg " id="phonebox" placeholder="Subject">
+                            <textarea class="form-control" rows="8" placeholder="Your Message"></textarea>
+                            <button type="button" class="btn btn-default btn-lg btn-block">Send</button>
+                        </form>
+                    </div>
                 </div>
                 
                 <div class="col-md-6 rightCol">
@@ -367,59 +372,6 @@
                         <p class="text-center">11/2 Snehlataganj, Indore (M.P)</p>
                         <p class="text-center">Hours: Monday-Saturday: 9am - 8pm</p>
                     </div>
-                    
-                    
-                    <!--<div class="row contactRow">
-                        <div class="col-xs-1 col-xs-offset-3">
-                            <div class="iconBox">
-                                <i class="ion-ios-location-outline stepsIcon"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="contactText">
-                                <p>11/2 Snehlataganj, Indore (Madhya Pradesh)</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row contactRow">
-                        <div class="col-xs-1 col-xs-offset-3">
-                            <div class="iconBox">
-                                <i class="ion-ios-telephone-outline stepsIcon"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="contactText">
-                                <p>0731-4004063, 98260-32486</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row contactRow">
-                        <div class="col-xs-1 col-xs-offset-3">
-                            <div class="iconBox">
-                                <i class="ion-ios-email-outline stepsIcon"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="contactText">
-                                <p>nikhil.tiwari@nggraphics.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row contactRow">
-                        <div class="col-xs-1 col-xs-offset-3">
-                            <div class="iconBox">
-                                <i class="ion-social-facebook-outline stepsIcon"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            <div class="contactText">
-                                <p>https://www.facebook.com/Kkilee?fref=ts</p>
-                            </div>
-                        </div>
-                    </div>-->
                 </div>
             </div>
         </div>
@@ -434,7 +386,15 @@
         </div>        
     </div>
             
-    
+    <section class="ftr">
+        <div class="container-fluid">
+            <div class="row">
+                <p class="text-center">
+                    &copy;2015 NG Graphics Pvt. Ltd. All rights reserved. Developed with love in California.
+                </p>             
+            </div>
+        </div>
+    </section>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

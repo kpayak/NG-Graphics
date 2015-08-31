@@ -74,7 +74,7 @@ p {
 
 /*----------------------------------------------------------------------------------------------------------*/
 
-.frontPage {
+#frontPage {
     position: relative;
     z-index: 2;
     font-family: 'Syncopate', sans-serif;
@@ -82,7 +82,7 @@ p {
 	background-color: #674172;
 }
 
-.frontPage h2 {
+#frontPage h2 {
     color: #F2F1EF;
 }
 
@@ -106,18 +106,18 @@ p {
 .mobileNavBar {
     display: none;
     width: 100%;
-    position: fixed;
     padding-top: 10px;
     top: 0px;
     height: 100px;
     background-color: #674172;
 }
 
-.mobileIcon {
-    font-size: 50px;
+.mobileNavBar .mobileIcon {
+    font-size: 40px;
     color: #F2F1EF;   
     transition: 1s;
 }
+
 
 .textMenu {
     display: block;
@@ -216,7 +216,7 @@ li {
 	margin-top: 20%;
 }
 
-.frontPage p {
+#frontPage p {
     color: #F2F1EF;
 }
 
@@ -237,34 +237,9 @@ li {
 	font-weight:300;
 }
 
-.btn-default {
-    margin-right: 35px;
-    font-size: 15px;
-    border-radius: 0px;
-    text-transform: uppercase;
-    border: 1px solid #674172;
-    background-color: #F2F1EF;
-    padding-top: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #674172;
-    transition: all 0.3s;
-}
-
-.btn-default:hover,
-.btn-default:active,
-.btn-default:focus {
-	background-color: #674172;
-    border: 1px solid #674172;
-    color:#fff;
-    -webkit-box-shadow: 10px 10px 50px 2px rgba(172, 171, 171, 0.63);
-    -moz-box-shadow: 10px 10px 50px 2px rgba(172, 171, 171, 0.63);
-    box-shadow: 5px 5px 24px 1px rgba(198, 196, 196, 1);
-
-}
 
 /*----------------------------------------------------------------------------------------------------------*/
-.whatWeDo {
+#whatWeDo {
     font-family: 'Raleway', sans-serif;
     height: 100%;
     padding-top:60px;
@@ -274,7 +249,7 @@ li {
     /*box-shadow: -5px -5px 25px #d0d0d0;*/
 }
 
-.whatWeDo p {
+#whatWeDo p {
     color: #674172;
 }
 
@@ -331,7 +306,7 @@ li {
 }
 
 
-.howWeWork {
+#howWeWork {
     font-family: 'Raleway', sans-serif;
     height: 100%;
     margin-top:-60px;
@@ -341,15 +316,15 @@ li {
     /*box-shadow: -5px -5px 25px #d0d0d0;*/
 }
 
-.howWeWork p {
+#howWeWork p {
     color: #a7a7a7;
 }
 
-.howWeWork .heading {
+#howWeWork .heading {
     color: #F2F1EF;    
 }
 
-.howWeWork .subHeading {
+#howWeWork .subHeading {
     color: #F2F1EF;
 }
 
@@ -363,7 +338,7 @@ li {
     margin-top: 5%;
     margin-bottom: 0;
     transform: translateX(-50%);
-    box-shadow: -5px -5px 25px #888888;
+    box-shadow: -5px -5px 25px #818181;
 }
 
 .stepsIcon {
@@ -382,7 +357,7 @@ li {
 
 
 /* ------------------------------------------------------------------------------------------------*/
-.ourTeam {
+#ourTeam {
     margin-top: 50px;
     padding-top:50px;
     padding-bottom:50px;
@@ -394,12 +369,12 @@ li {
     /*box-shadow: 5px -5px 25px #d0d0d0;*/
 }
 
-.ourTeam .heading {
+#ourTeam .heading {
     color: #674172;
     
 }
 
-.ourTeam .subHeading {
+#ourTeam .subHeading {
     color: #674172;
     
 }
@@ -652,40 +627,63 @@ li {
 
 
 /* ------------------------------------------------------------------------------------------------*/
-.contactUs{
+#contactUs{
     position: relative;
     background-color: #674172;
     z-index: 1;
     margin-top: -50px;
     margin-bottom: 45px;
     padding-top:50px;
-    padding-bottom:100px;
+    padding-bottom:50px;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
-    height: 100vh;
+    height: 100%;
 }
 
-.contactUs h3,p {
+#contactUs h3,p {
     color: #F2F1EF;
 }
 
-.contactUs .btn {
+#contactUs .btn {
     font-weight: 100;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    width: 20%;
+    float: right;
 }
 
-.contactUs .heading {
+.btn-default {
+    font-size: 15px;
+    border-radius: 0px;
+    border: none;
+    text-transform: uppercase;
+    background-color: #F2F1EF;
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #674172;
+    transition: all 0.5s;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+	background-color: #fff;
+    color:#674172;
+    box-shadow: 5px 5px 25px #646464;;
+
+}
+
+
+#contactUs .heading {
     color: #F2F1EF;
 }
 
-.contactUs .subHeading {
+#contactUs .subHeading {
     color: #F2F1EF;
 }
 
 .leftCol {
-    background-color: #674172;
-
 }
 
 input,textarea {
@@ -705,39 +703,27 @@ form {
     margin-left: 30px;
 }
 
-.contactRow {
-    margin-bottom: 30px;
-}
-
-.contactUs .iconBox {
-    width: 60px;
-    height: 60px;   
-    margin-left: 0%;
-}
-
-.contactUs .stepsIcon {
-    font-size: 30px;
-}
-
-.contactText {
-    width: 100%;
-    height: 60px;
-    padding-top: 8px;
-}
-
-.contactText p {
-    font-size: 18px;
-}
-
 .rightCol {
-    margin: 0;
-    padding: 0;
-    background-color: #674172;
 }
 
 .bigIcon {
     color:#F2F1EF;
     font-size: 200px;
+}
+
+.ftr {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    margin-top: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+.ftr p {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(103, 65, 114, 0.8);
 }
 
 @media screen and (max-width: 767px) {
@@ -748,6 +734,10 @@ form {
 	h2 {
 		font-size:15px;
 	}
+    
+    h3 {
+        font-size: 20px;
+    }
     
     .navbarRow {
         display: none;
@@ -767,7 +757,7 @@ form {
 	}
 
 	.vertical-align {
-		margin-top: 50%;
+		margin-top: 25%;
 	}
 
 	.name {
@@ -813,5 +803,20 @@ form {
         margin-left: 20px;
         margin-bottom: 30px;
     }
+    
+    .btn-default {
+        margin-right: 10px !important;
+    }
+    
+    .bigIcon {
+        font-size: 150px;
+    }
+    
+    .ftr p {
+    font-size: 9px;
+    }
+    
+    
+
 
 }
