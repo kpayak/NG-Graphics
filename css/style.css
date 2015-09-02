@@ -193,7 +193,8 @@ li {
 .navbarRow.sticky li > a:link,
 .navbarRow.sticky li > a:visited {
     color: #674172;
-    text-decoration: none;    
+    text-decoration: none;   
+    transition: all 0.5s;
 }
 
 .navbarRow.sticky li > a:hover,
@@ -210,6 +211,10 @@ li {
     border: 1px solid #674172;
     padding: 10px;
     text-decoration: none;
+}
+
+.activeLink {
+    text-decoration: underline !important;
 }
 
 .vertical-align {

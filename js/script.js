@@ -10,39 +10,46 @@ $(document).ready(function(){
             $('.navbarRow').removeClass('sticky');
         }
     });
-});
-
-/*$(".descButton").click(function () {
-    var card = $(this).parent().parent();
     
-    if (card.hasClass('active')) {
-        card.removeClass('active');
+    /* Owner card hover effect */
+       
+    $(".materialCard")
+    .mouseenter(function () {
+        //var card = $(this).parent().parent();      
+        $(this).addClass('active');
+    })
+    .mouseleave(function(){
+        $(this).removeClass('active');
+    });
+
+    /*------ Script to mark sections on vertical scroll ----*/
+
+    //Get all hrefs from navbar
+    var navLi = $(".navbarRow li").children();
+    var aArray = [];
+
+    //Running for loop to (len-1) to get rid of LOGIN a href
+    for(var i=0; i<(navLi.length)-1; i++) {
+        aArray.push($(navLi[i]).attr('href'));
     }
     
-    else {
-        card.addClass('active');
-    }
-    
-    });*/
+    $(window).scroll ( function () {
+        var windowPos = $(window).scrollTop();
+        for (var i=0; i<aArray.length; i++) {
+            var divPos = $(aArray[i]).offset().top;
+            var divHeight = $(aArray[i]).height();
 
-$(".materialCard")
-.mouseenter(function () {
-    //var card = $(this).parent().parent();      
-    $(this).addClass('active');
-})
-.mouseleave(function(){
-    console.log("leaving");
-    $(this).removeClass('active');
+            if (windowPos > divPos && windowPos < (divPos+divHeight)) {
+                $("a[href='"+aArray[i]+"']").addClass("activeLink");
+            }
+
+            else {
+                $("a[href='"+aArray[i]+"']").removeClass("activeLink");
+            }
+        }
+    });
 });
 
-// Script to mark sections on vertical scroll
 
-$(".whatWeDo").mouseenter ( function() {
-    console.log("entered what we do");
-});
-
-$(".whatWeDo").mouseleave ( function() {
-    console.log("leaving what we do");
-});
 
 
