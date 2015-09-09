@@ -1,4 +1,5 @@
-$(document).ready(function(){    
+$(document).ready(function(){  
+    
     $(window).scroll(function() {
 
         if ($(document).scrollTop() > 400) {
@@ -47,6 +48,18 @@ $(document).ready(function(){
                 $("a[href='"+aArray[i]+"']").removeClass("activeLink");
             }
         }
+    });
+    
+    /*-------------------- Script for smooth scroll to links on the page ------------*/
+    
+    $('a[href^=#]').on('click',function(e){
+        
+        e.preventDefault();
+        var target = this.hash;
+        var $target = $(target);
+        
+        $('html,body').stop().animate({'scrollTop':$target.offset().top},900,'swing');
+        
     });
 });
 

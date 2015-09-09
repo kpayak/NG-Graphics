@@ -214,7 +214,7 @@ li {
 }
 
 .activeLink {
-    text-decoration: underline !important;
+    text-shadow: 3px 3px 15px #525252;
 }
 
 .vertical-align {
