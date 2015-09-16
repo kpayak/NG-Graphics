@@ -39,8 +39,34 @@ $(document).ready(function(){
         for (var i=0; i<aArray.length; i++) {
             var divPos = $(aArray[i]).offset().top;
             var divHeight = $(aArray[i]).height();
-
-            if (windowPos > divPos && windowPos < (divPos+divHeight)) {
+            var aboutUsAnimation = 'active animated fadeInDown';
+            var howWeWorkAnimation = 'active animated fadeInUp';
+            var ourTeamAnimation = 'active animated flipInY';
+            
+            if (windowPos > (divPos*0.75) && windowPos < (divPos+divHeight)) {
+                
+                if(aArray[i]=='#whatWeDo')
+                {
+                    $(".cards").addClass(aboutUsAnimation);
+                }
+                
+                /*else {
+                    $(".cards").removeClass(animationClass);
+                    console.log("removing class");
+                }*/
+                
+                if(aArray[i]=='#howWeWork')
+                {
+                    $(".howWeWorkCard").addClass(howWeWorkAnimation);
+                }
+                
+                if(aArray[i]=='#ourTeam')
+                {
+                    console.log("detected");
+                    $(".ownerCard").addClass(ourTeamAnimation);
+                }
+                
+                //Navbar animation
                 $("a[href='"+aArray[i]+"']").addClass("activeLink");
             }
 
@@ -59,8 +85,8 @@ $(document).ready(function(){
         var $target = $(target);
         
         $('html,body').stop().animate({'scrollTop':$target.offset().top},900,'swing');
-        
     });
+    
 });
 
 
